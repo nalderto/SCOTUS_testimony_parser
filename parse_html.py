@@ -9,7 +9,7 @@ doc = lh.fromstring(html.read())
 speakers = doc.xpath('//td/strong')
 statements = doc.xpath('//td/p')
 
-workbook = xlsxwriter.Workbook('Bork.xlsx')
+workbook = xlsxwriter.Workbook('Bork_Table.xlsx')
 worksheet = workbook.add_worksheet()
 
 worksheet.write('A1', 'Speaker')
